@@ -5,21 +5,21 @@
 class Shync < Formula
   desc "Sync config files across devices"
   homepage "https://github.com/quangkhaidam93/shync"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.1/shync_0.7.1_darwin_amd64.tar.gz"
-      sha256 "03a03fc293a11f0d342d176cd916b39260a83b4a61a95f73aadfeab5bba7cb50"
+      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.2/shync_0.7.2_darwin_amd64.tar.gz"
+      sha256 "d6fd4ece69d610183562ee0095a9d6e85099e85e6805796a7d89ba149f35b0aa"
 
       define_method(:install) do
         bin.install "shync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.1/shync_0.7.1_darwin_arm64.tar.gz"
-      sha256 "9ae65f7d73e7272b2928953b9795fb0c0196f1eb03fba633ab477c99bbd5f3af"
+      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.2/shync_0.7.2_darwin_arm64.tar.gz"
+      sha256 "ffb93b55229f9be12afe99c61a8a9c8a93d19941e0c20ad8d678dcea37af6b50"
 
       define_method(:install) do
         bin.install "shync"
@@ -29,15 +29,15 @@ class Shync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.1/shync_0.7.1_linux_amd64.tar.gz"
-      sha256 "e6b61185b601edfc1d74cde8747e5aa36786748491dc821a76b2d3616b8fcf02"
+      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.2/shync_0.7.2_linux_amd64.tar.gz"
+      sha256 "e962b525172c240f23f44ed4247024ccf1070a02be7272d9e0a465e93ce61f1f"
       define_method(:install) do
         bin.install "shync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.1/shync_0.7.1_linux_arm64.tar.gz"
-      sha256 "1e7f2646a72d5e1c2ed33771a142623d9f8115699eb7f9becc24c79bd71469a9"
+      url "https://github.com/quangkhaidam93/shync/releases/download/v0.7.2/shync_0.7.2_linux_arm64.tar.gz"
+      sha256 "5c390e244dd0930ffb3f5b3f4f75ef36ba853e8ed50d43d3e28ae080ca31e1aa"
       define_method(:install) do
         bin.install "shync"
       end
